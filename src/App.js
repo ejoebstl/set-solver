@@ -29,11 +29,14 @@ function genCards(count) {
   return cards
 }
 
-function markSets(cards) {
+function unmarkSets(cards) {
   for(const card of cards) {
-    cards.isSet = false;
+    card.isSet = false;
   }
+}
 
+function markSets(cards) {
+  unmarkSets(cards)
   for(let i = 0; i < cards.length; i++) {
     for(let j = i + 1; j < cards.length; j++) {
       for(let k = j + 1; k < cards.length; k++) {
@@ -71,26 +74,32 @@ function App() {
   const [cards, setCards] = useState(genCards(9))
 
   const nextColor = (i) => {
+    unmarkSets(cards)
     cards[i].color = selectNext(COLORS, cards[i].color)
     setCards([...cards])
   }
   const nextShape = (i) => {
+    unmarkSets(cards)
     cards[i].shape = selectNext(SHAPES, cards[i].shape)
     setCards([...cards])
   }
   const nextFill = (i) => {
+    unmarkSets(cards)
     cards[i].style = selectNext(STYLES, cards[i].style)
     setCards([...cards])
   }
   const nextCount = (i) => {
+    unmarkSets(cards)
     cards[i].count = selectNext(COUNTS, cards[i].count)
     setCards([...cards])
   }
   const remove = (i) => {
+    unmarkSets(cards)
     cards.splice(i, 1)
     setCards([...cards])
   }
   const add = () => {
+    unmarkSets(cards)
     setCards([...cards, ...genCards(1)])
   }
   const solve = () => {
