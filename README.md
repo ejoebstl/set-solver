@@ -6,6 +6,8 @@ An interactive solver for the funny game [set](https://en.wikipedia.org/wiki/Set
 
 ![Set Solver](./demo.png)
 
+See it [in action](https://set-solver.netlify.com/).
+
 To run:
 
 ```
