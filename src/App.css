@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  margin: auto;
 }
 
 .App-logo {
@@ -19,4 +20,19 @@
 
 .App-link {
   color: #09d3ac;
+}
+
+.add-button { 
+  width: 80px;
+  height: 65px;
+  float: left;
+  border-radius: 4px;
+  border: 1px solid darkslategray;
+  margin: 8px;
+  background-color: white;
+  filter: drop-shadow(2px 2px 0.1rem gray);
+  font-size: 40px;
+  padding-top: 15px;
+  margin-top: 50px;
+  cursor: pointer;
 }

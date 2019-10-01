@@ -1,0 +1,50 @@
+.red-solid {
+    fill: red;
+    stroke: red;
+}
+
+.red-stripes {
+    fill: url(#stripes-red-solid);
+    stroke: red;
+}
+
+.red-empty {
+    fill: white;
+    stroke: red;
+}
+
+.green-solid {
+    fill: green;
+    stroke: green;
+}
+
+.green-stripes {
+    fill: url(#stripes-green-solid);
+    stroke: green;
+}
+
+.green-empty {
+    fill: white;
+    stroke: green;
+}
+
+.purple-solid {
+    fill: purple;
+    stroke: purple;
+}
+
+.purple-stripes {
+    fill: url(#stripes-purple-solid);
+    stroke: purple;
+}
+
+.purple-empty {
+    fill: white;
+    stroke: purple;
+}
+
+.shape-container {
+    width: 64px;
+    height: 32px;
+    margin: 8px;
+}

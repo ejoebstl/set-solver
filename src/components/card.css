@@ -1,0 +1,51 @@
+.card {
+    width: 80px;
+    height: 160px;
+    float: left;
+    border-radius: 4px;
+    border: 1px solid darkslategray;
+    margin: 8px;
+    background-color: white;
+    filter: drop-shadow(2px 2px 0.1rem gray);
+}
+
+.set {
+    filter: drop-shadow(0px 0px 0.3rem orange);
+}
+
+.card-header {
+    height: 16px;
+    border-bottom: 1px solid black;
+    margin-left: -1px;
+    margin-right: -1px;
+    padding-left: 1px;
+}
+
+.card-content-1 {
+    height: 32px;
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+
+.card-content-2 {
+    height: 64px;
+    margin-top: 28px;
+    margin-bottom: 36px;
+}
+
+.card-footer {
+    height: 16px;
+    border-top: 1px solid black;
+    margin-left: -1px;
+    margin-right: -1px;
+    padding-left: 1px;
+}
+
+.card-button {
+    margin-top: 1px;
+    height: 20px;
+    font-size: 12px;
+    width: 20px;
+    float: left;
+    cursor: pointer;
+}
